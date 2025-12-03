@@ -1,0 +1,30 @@
+# Prama Configuration Example
+# Copy this file to ~/.config/lloader/config.yaml or /etc/lloader/config.yaml
+
+# Models directory (can be overridden with --models-dir flag)
+models_dir: "/home/horst/models"
+
+# Default NGL (Number of GPU Layers) for llama.cpp
+default_ngl: 99
+
+# Default context size for the model (0 lets the model choose)
+default_ctx_size: 0
+
+# Log level: debug, info, warn, error
+log_level: "info"
+
+# Log file path (empty for stdout)
+log_file: ""
+
+# Command templates
+# Available placeholders:
+#   {model_path} - Full path to the model file
+#   {model_name} - Name of the model file
+#   {ngl} - Number of GPU layers
+server_template: "llama-server -m {model_path} --hf-file {model_name} -ngl {ngl}"
+cli_template: "llama-cli -m {model_path} --hf-file {model_name} -ngl {ngl}"
+
+# Additional environment variables for subprocesses
+# env:
+#   PYTHONUNBUFFERED: "1"
+#   LLAMA_UNBUFFERED: "1"

@@ -1,0 +1,38 @@
+# Binaries
+bin/
+/lload
+
+# Dependency directories
+vendor/
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Test coverage
+coverage.out
+coverage.html
+
+# Logs
+*.log
+error.log
+
+# Config files (except examples)
+config/config.yaml
+/config.yaml
+
+# Temporary files
+tmp/
+temp/
